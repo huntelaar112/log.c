@@ -1,0 +1,26 @@
+2023-04-07 11:41:48 TRACE ../src/main.c:35: Address of file in RAM: 0x56127b89f490
+
+2023-04-07 11:41:48 TRACE ../src/main.c:36: Open file /home/mannk/eclipse-workspace/linux-file/Debug/file1.txt
+
+2023-04-07 11:41:48 TRACE ../src/main.c:39: Address of file in RAM after close file: 0x21f
+
+2023-04-07 11:55:18 TRACE ../src/main.c:37: Address of file in RAM: 0x55b49aff4490
+2023-04-07 11:55:18 TRACE ../src/main.c:38: Open file file1.txt
+2023-04-07 11:55:18 FATAL ../src/main.c:39: This is a fatal test
+2023-04-07 11:55:18 TRACE ../src/main.c:42: Address of file in RAM after close file: 0x21f
+2023-04-07 11:55:56 TRACE ../src/main.c:37: Address of file in RAM: 0x55d62a9e8490
+2023-04-07 11:55:56 TRACE ../src/main.c:38: Open file file1.txt
+2023-04-07 11:55:56 FATAL ../src/main.c:39: This is a fatal test
+2023-04-07 11:55:56 TRACE ../src/main.c:42: Address of file in RAM after close file: 0x21f
+2023-04-07 14:26:03 INFO  ../example/main.c:43: Address of file in RAM: 0x5615371b5490
+2023-04-07 14:26:03 TRACE ../example/main.c:44: Open file file1.txt
+2023-04-07 14:26:03 FATAL ../example/main.c:45: This is a fatal test
+2023-04-07 14:26:03 INFO  ../example/main.c:48: Address of file in RAM after close file: 0x21f
+2023-04-07 14:26:03 INFO  ../example/main.c:49: line:49, file:../example/main.c
+
+2023-04-07 14:27:20 INFO  ../example/main.c:43: Address of file in RAM: 0x55d8d8d02490
+2023-04-07 14:27:20 TRACE ../example/main.c:44: Opening file, printf content file: file1.txt
+2023-04-07 14:27:20 FATAL ../example/main.c:48: This is a fatal test
+2023-04-07 14:27:20 INFO  ../example/main.c:50: Address of file in RAM after close file: 0x7f935df96500
+2023-04-07 14:27:20 INFO  ../example/main.c:51: line:51, file:../example/main.c
+

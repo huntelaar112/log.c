@@ -35,20 +35,21 @@ int main(int argc, char* argv[]) {
 	// add custom callback funtion when meet LOG_FATAL
 	log_add_callback(fatalCb, stderr, LOG_FATAL);
 
+	const char* TAG = "TESTING";
 	while(--argc){
 		if((fp = fopen(*++argv, "r")) == NULL) {
 			printf("ERR open file");
 			return 1;
 		}
-		log_info("Address of file in RAM: %p", fp);
-		log_trace("Opening file, printf content file: %s", *argv);
+		log_info(TAG, "Address of file in RAM: %p", fp);
+		log_trace(TAG, "Opening file, printf content file: %s", *argv);
 		filecp(fp, stdout);
 		fclose(fp);
 
-		log_fatal("This is a fatal test");
+		log_fatal(TAG, "This is a fatal test");
 
-		log_info("Address of file in RAM after close file: %p");
-		log_info("line:%d, file:%s\n", __LINE__, __FILE__);
+		log_info(TAG, "Address of file in RAM after close file: %p");
+		log_info(TAG, "line:%d, file:%s\n", __LINE__, __FILE__);
 	}
 	fclose(logfile);
 	return 0;
